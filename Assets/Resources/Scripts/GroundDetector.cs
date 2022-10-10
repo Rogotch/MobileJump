@@ -18,7 +18,7 @@ public class GroundDetector : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        GetComponentInParent<Character>().on_ground_flag = true;
+        GetComponentInParent<Player>().on_ground_flag = true;
         //Debug.Log("Ground");
     }
 }
